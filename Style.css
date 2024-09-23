@@ -167,10 +167,43 @@ span {
   margin-top: 15px;
   justify-content: space-around;
 }
+
 .form .icons div {
   width: 2rem;
 }
 
 button {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero button {
+    align-self: center;
+  }
+
+  .form {
+    margin-top: 5%;
+  }
 }
